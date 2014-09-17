@@ -19,6 +19,7 @@
 		43597AA019C9317D00EFCB81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43597A8819C9317C00EFCB81 /* UIKit.framework */; };
 		43597AA819C9317D00EFCB81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43597AA619C9317D00EFCB81 /* InfoPlist.strings */; };
 		43597AAA19C9317D00EFCB81 /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43597AA919C9317D00EFCB81 /* BlocBrowserTests.m */; };
+		43597AB519C9321000EFCB81 /* BLCWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 43597AB419C9321000EFCB81 /* BLCWebBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		43597AA519C9317D00EFCB81 /* BlocBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlocBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		43597AA719C9317D00EFCB81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43597AA919C9317D00EFCB81 /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
+		43597AB319C9321000EFCB81 /* BLCWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCWebBrowser.h; sourceTree = "<group>"; };
+		43597AB419C9321000EFCB81 /* BLCWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCWebBrowser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		43597A7819C9317C00EFCB81 = {
 			isa = PBXGroup;
 			children = (
+				43597AB319C9321000EFCB81 /* BLCWebBrowser.h */,
+				43597AB419C9321000EFCB81 /* BLCWebBrowser.m */,
 				43597A8A19C9317C00EFCB81 /* BlocBrowser */,
 				43597AA319C9317D00EFCB81 /* BlocBrowserTests */,
 				43597A8319C9317C00EFCB81 /* Frameworks */,
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43597AB519C9321000EFCB81 /* BLCWebBrowser.m in Sources */,
 				43597A9519C9317C00EFCB81 /* BLCAppDelegate.m in Sources */,
 				43597A9119C9317C00EFCB81 /* main.m in Sources */,
 			);
