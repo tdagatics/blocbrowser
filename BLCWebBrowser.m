@@ -119,26 +119,23 @@
 # pragma google search
     
     NSString *URLString = textField.text;
-    NSRange textFieldRange = [URLString rangeOfString:@" "];
-    NSString *replaceURLString = [URLString stringByReplacingCharactersInRange:textFieldRange withString:@"+"];
+    NSString *URLStringAdjusted = [NSString stringWithFormat:@"http://google.com/search?q=%@", URLString];
+    NSURL *URL = [NSURL URLWithString:URLStringAdjusted];
     
-    NSURL *URL = [NSURL URLWithString:replaceURLString];
+    //Create a string called URLString from text entered by an end-user
+    //Check to see if the string has whitespace
     
-    if(!URL.scheme ) {
-        //The user's query includes a space
-        URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://google.com/search?q=%@", URLString]];
-    }
-
-    if (!URL.scheme) {
-        //THe user didn't type http: or https:
+    //NSRange whiteSpaceRange = [URLString rangeOfCharacterFromSet:[NSCharacterSet whitespaceCharacterSet]];
+    //if (whiteSpaceRange.location != NSNotFound) {
+      //  NSString *URLStringAdjusted = [NSString stringWithFormat:@"http://www.google.com/search?q=%@",URLString];
+       // URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://google.com/search?q=%@", URLStringAdjusted]];
+     if (!URL.scheme) {
+        //The user didn't type http: or https:
         URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", URLString]];
-    }
-    
-    if (URL) {
+    } else {
         NSURLRequest *request = [NSURLRequest requestWithURL:URL];
         [self.webview loadRequest:request];
     }
-    
     
     return NO;
 }
