@@ -19,7 +19,7 @@
 @property (nonatomic, strong) UIButton *reloadButton;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
 
-@property (nonatomic, assign) BOOL isLoading;
+//@property (nonatomic, assign) BOOL isLoading;
 //Need to account for multiple frames
 @property (nonatomic, assign) NSUInteger frameCount;
 
@@ -119,16 +119,16 @@
 # pragma google search
     
     NSString *URLString = textField.text;
-    NSString *URLStringAdjusted = [NSString stringWithFormat:@"http://google.com/search?q=%@", URLString];
-    NSURL *URL = [NSURL URLWithString:URLStringAdjusted];
+    NSURL *URL = [NSURL URLWithString:URLString];
     
     //Create a string called URLString from text entered by an end-user
     //Check to see if the string has whitespace
     
-    //NSRange whiteSpaceRange = [URLString rangeOfCharacterFromSet:[NSCharacterSet whitespaceCharacterSet]];
-    //if (whiteSpaceRange.location != NSNotFound) {
-      //  NSString *URLStringAdjusted = [NSString stringWithFormat:@"http://www.google.com/search?q=%@",URLString];
-       // URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://google.com/search?q=%@", URLStringAdjusted]];
+    NSRange whiteSpaceRange = [URLString rangeOfCharacterFromSet:[NSCharacterSet whitespaceCharacterSet]];
+    if (whiteSpaceRange.location != NSNotFound) {
+        NSString *stringAdjustedForGoogle = [URLString stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+        NSString *URLStringAdjustedForGoogle = [NSString stringWithFormat:@"http://www.google.com/search?q=%@",stringAdjustedForGoogle];
+        URL = [NSURL URLWithString:URLStringAdjustedForGoogle];
      if (!URL.scheme) {
         //The user didn't type http: or https:
         URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", URLString]];
@@ -140,21 +140,18 @@
     return NO;
 }
 
-#pragma mark - UIWebViewDelegate
-
+//-(void)webViewDidStartLoad:(UIWebView *)webView {
+//    self.isLoading = YES;
+  //  augment counter rather than searching for Boolean value
+    
 -(void)webViewDidStartLoad:(UIWebView *)webView {
-    //self.isLoading = YES;
-    //augment counter rather than searching for Boolean value
     self.frameCount++;
     [self updateButtonsAndTitle];
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
-    //self.isLoading = NO;
-    //decrement counter rather than searching for Boolean value
     self.frameCount--;
     [self updateButtonsAndTitle];
-    self.frameCount--;
 }
 
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
@@ -169,12 +166,12 @@
 #pragma mark - Miscellaneous
 
 -(void) updateButtonsAndTitle {
-    NSString *webpageTitle = [self.webview stringByEvaluatingJavaScriptFromString:@"document.title"];
+    NSString *webpageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     
     if (webpageTitle) {
         self.title = webpageTitle;
     } else {
-        self.title = self.webview.request.URL.absoluteString;
+        self.title = self.webView.request.URL.absoluteString;
     }
 
     if (self.isLoading) {
@@ -185,12 +182,29 @@
     }
     }
     
-    self.backButton.enabled = [self.webview canGoBack];
-    self.forwardButton.enabled = [self.webview canGoForward];
+    self.backButton.enabled = [self.webView canGoBack];
+    self.forwardButton.enabled = [self.webView canGoForward];
     self.stopButton.enabled = self.frameCount > 0;
     self.reloadButton.enabled = self.frameCount == 0;
 
 }
 
+}
+
+-(void) resetWebView {
+    [self.webview removeFromSuperview];
+    
+    UIWebView *newWebView = [[UIWebView alloc] init];
+    newWebView.delegate = self;
+    [self.view addSubview:newWebView];
+    
+    self.webview = newWebView;
+    
+//    [self addButtonTargets];
+    
+    self.textField.text = nil;
+   // [self updateButtonsAndTitle];
+    
+}
 
 @end

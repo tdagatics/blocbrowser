@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLCWebBrowser : UIViewController
+@interface BLCWebBrowser : UIViewController <UIWebViewDelegate>
+
+/**
+ Replaces the web view with a fresh one, erasing all history. Also updates the URL field and tool bar buttons appropriately.
+ */
+-(void) resetWebView;
 
 @end
+
+
