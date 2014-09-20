@@ -32,12 +32,30 @@
     [self.view addSubview:newWebView];
     
     self.webview = newWebView;
+    
+    [self addButtonTargets];
+    
     self.textField.text = nil;
+    [self updateButtonsAndTitle];
 }
+
+-(void) addButtonTargets {
+    for (UIButton *button in @[self.backButton, self.forwardButton, self.stopButton, self.reloadButton]) {
+        ([button removeTarget:nil action:NULL forControlEvents:UIControlEventTouchUpInside]);
+    }
+   
+    [self.backButton setTitle:NSLocalizedString(@"Back", @"Back Button") forState:UIControlStateNormal];
+    [self.forwardButton setTitle:NSLocalizedString(@"Forward", @"Forward Button") forState:UIControlStateNormal];
+    [self.stopButton setTitle:NSLocalizedString(@"Stop", @"Stop Button") forState:UIControlStateNormal];
+    [self.reloadButton setTitle:NSLocalizedString(@"Reload", @"Reload Button") forState:UIControlStateNormal];
+}
+
 
 -(void)loadView {
     UIView *mainView = [UIView new];
     self.webview = [[UIWebView alloc] init];
+    UIAlertView *welcomeAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Welcome to Browser", "Welcome to Browser") message:NSLocalizedString(@"Welcome to Browser", "Welcome to Browser") delegate:nil cancelButtonTitle:NSLocalizedString(@"Okay, use browser!", @"Okay, user browser!") otherButtonTitles:nil];
+    [welcomeAlert show];
     self.webview.delegate = self;
     
     // Build TextFieldView
@@ -194,6 +212,7 @@
     self.forwardButton.enabled = [self.webview canGoForward];
     self.stopButton.enabled = self.frameCount > 0;
     self.reloadButton.enabled = self.frameCount == 0;
+    self.reloadButton.enabled = self.webview.request.URL && self.frameCount == 0;
 }
 
 
