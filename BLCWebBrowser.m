@@ -9,8 +9,6 @@
 #import "BLCWebBrowser.h"
 
 @interface BLCWebBrowser () <UIWebViewDelegate, UITextFieldDelegate>
-
-
 @property (nonatomic, strong) UIWebView *webview;
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) UIButton *backButton;
@@ -18,8 +16,7 @@
 @property (nonatomic, strong) UIButton *stopButton;
 @property (nonatomic, strong) UIButton *reloadButton;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
-
-//@property (nonatomic, assign) BOOL isLoading;
+@property (nonatomic, assign) BOOL isLoading;
 //Need to account for multiple frames
 @property (nonatomic, assign) NSUInteger frameCount;
 
@@ -27,7 +24,16 @@
 
 @implementation BLCWebBrowser
 
-#pragma mark - UIViewController
+-(void)resetWebView {
+    [self.webview removeFromSuperview];
+    
+    UIWebView *newWebView = [[UIWebView alloc] init];
+    newWebView.delegate = self;
+    [self.view addSubview:newWebView];
+    
+    self.webview = newWebView;
+    self.textField.text = nil;
+}
 
 -(void)loadView {
     UIView *mainView = [UIView new];
@@ -113,6 +119,7 @@
 
 #pragma mark - UITextFieldDelegate
 
+    
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
 
@@ -129,9 +136,13 @@
         NSString *stringAdjustedForGoogle = [URLString stringByReplacingOccurrencesOfString:@" " withString:@"+"];
         NSString *URLStringAdjustedForGoogle = [NSString stringWithFormat:@"http://www.google.com/search?q=%@",stringAdjustedForGoogle];
         URL = [NSURL URLWithString:URLStringAdjustedForGoogle];
-     if (!URL.scheme) {
+        NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+        [self.webview loadRequest:request];
+        } else if (!URL.scheme) {
         //The user didn't type http: or https:
         URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", URLString]];
+        NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+        [self.webview loadRequest:request];
     } else {
         NSURLRequest *request = [NSURLRequest requestWithURL:URL];
         [self.webview loadRequest:request];
@@ -140,11 +151,8 @@
     return NO;
 }
 
-//-(void)webViewDidStartLoad:(UIWebView *)webView {
-//    self.isLoading = YES;
-  //  augment counter rather than searching for Boolean value
     
--(void)webViewDidStartLoad:(UIWebView *)webView {
+-(void)webViewDidStartLoad:(UIWebView *)webview {
     self.frameCount++;
     [self updateButtonsAndTitle];
 }
@@ -166,12 +174,12 @@
 #pragma mark - Miscellaneous
 
 -(void) updateButtonsAndTitle {
-    NSString *webpageTitle = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    NSString *webpageTitle = [self.webview stringByEvaluatingJavaScriptFromString:@"document.title"];
     
     if (webpageTitle) {
         self.title = webpageTitle;
     } else {
-        self.title = self.webView.request.URL.absoluteString;
+        self.title = self.webview.request.URL.absoluteString;
     }
 
     if (self.isLoading) {
@@ -182,29 +190,12 @@
     }
     }
     
-    self.backButton.enabled = [self.webView canGoBack];
-    self.forwardButton.enabled = [self.webView canGoForward];
+    self.backButton.enabled = [self.webview canGoBack];
+    self.forwardButton.enabled = [self.webview canGoForward];
     self.stopButton.enabled = self.frameCount > 0;
     self.reloadButton.enabled = self.frameCount == 0;
-
 }
 
-}
 
--(void) resetWebView {
-    [self.webview removeFromSuperview];
-    
-    UIWebView *newWebView = [[UIWebView alloc] init];
-    newWebView.delegate = self;
-    [self.view addSubview:newWebView];
-    
-    self.webview = newWebView;
-    
-//    [self addButtonTargets];
-    
-    self.textField.text = nil;
-   // [self updateButtonsAndTitle];
-    
-}
 
 @end
