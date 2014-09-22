@@ -22,22 +22,6 @@
 
 @implementation BLCAwesomeFloatingToolbar
 
-//-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-//{
-//}
-
-//-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-//{
-//}
-
-//-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
-//{
-//}
-
-//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-//}
-
-
 -(instancetype) initWithFourTitles:(NSArray *)titles {
     self = [super init];
     
@@ -166,7 +150,7 @@
     if (recognizer.state == UIGestureRecognizerStateRecognized) {
         CGPoint translation = [recognizer translationInView:self];
         
-        NSLog(@"New translation: %@", NSStringFromCGPoint(translation));
+        //NSLog(@"New translation: %@", NSStringFromCGPoint(translation));
         
         if ([self.delegate respondsToSelector:@selector(floatingToolbar:didTryToPinchWithOffset:)]) {
             [self.delegate floatingToolbar:self didTryToPinchWithOffset:translation];
