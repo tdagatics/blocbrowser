@@ -38,6 +38,8 @@
 -(void)loadView {
     UIView *mainView = [UIView new];
     self.webview = [[UIWebView alloc] init];
+    UIAlertView *welcomeAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Welcome to Browser", "Welcome to Browser") message:NSLocalizedString(@"Welcome to Browser", "Welcome to Browser") delegate:nil cancelButtonTitle:NSLocalizedString(@"Okay, use browser!", @"Okay, user browser!") otherButtonTitles:nil];
+    [welcomeAlert show];
     self.webview.delegate = self;
     
     // Build TextFieldView
