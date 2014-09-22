@@ -42,6 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432935072.579339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -53,6 +54,14 @@
             endingLineNumber = "117"
 >>>>>>> awesome-colorful-toolbar
             landmarkName = "-viewWillLayoutSubviews"
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-viewDidLoad"
+>>>>>>> clear-history-revised
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -63,6 +72,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432935072.579339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -70,6 +80,15 @@
             endingLineNumber = "121"
             landmarkName = "@implementation BLCWebBrowser"
             landmarkType = "3">
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-loadView"
+            landmarkType = "5">
+>>>>>>> clear-history-revised
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -79,12 +98,21 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432935072.579339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
             endingLineNumber = "138"
             landmarkName = "-textFieldShouldReturn:"
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-loadView"
+>>>>>>> clear-history-revised
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -95,6 +123,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432935072.579339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -107,6 +136,14 @@
             endingLineNumber = "151"
             landmarkName = "-textFieldShouldReturn:"
 >>>>>>> awesome-colorful-toolbar
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "-viewDidLoad"
+>>>>>>> clear-history-revised
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -117,6 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432935072.579339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -129,6 +167,14 @@
             startingLineNumber = "170"
             endingLineNumber = "170"
             landmarkName = "-webView:didFailLoadWithError:"
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-viewWillLayoutSubviews"
+>>>>>>> clear-history-revised
             landmarkType = "5">
 >>>>>>> awesome-colorful-toolbar
          </BreakpointContent>
@@ -140,11 +186,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432935072.579339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+>>>>>>> clear-history-revised
             landmarkName = "-textFieldShouldReturn:"
             landmarkType = "5">
          </BreakpointContent>
@@ -156,6 +210,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432935072.579339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -185,6 +240,13 @@
 <<<<<<< HEAD
             startingLineNumber = "145"
             endingLineNumber = "145"
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+>>>>>>> clear-history-revised
             landmarkName = "-textFieldShouldReturn:"
 =======
             startingLineNumber = "157"
@@ -201,6 +263,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432921491.776673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -254,6 +317,15 @@
                   offsetFromSymbolStart = "31">
                </Location>
             </Locations>
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "@implementation BLCWebBrowser"
+            landmarkType = "3">
+>>>>>>> clear-history-revised
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -263,12 +335,21 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432962056.977528"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
             landmarkName = "-loadView"
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "-textFieldShouldReturn:"
+>>>>>>> clear-history-revised
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -279,6 +360,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCWebBrowser.m"
+<<<<<<< HEAD
             timestampString = "432962596.166328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -290,6 +372,14 @@
             endingLineNumber = "59"
 >>>>>>> awesome-colorful-toolbar
             landmarkName = "-loadView"
+=======
+            timestampString = "433101542.585867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-textFieldShouldReturn:"
+>>>>>>> clear-history-revised
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
