@@ -196,4 +196,25 @@
     [self.awesomeToolbar setEnabled:self.webview.request.URL && self.frameCount == 0 forButtonWithTtile:kBLCWebBrowserRefreshString];
 }
 
+-(void)floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset {
+    CGPoint startingPoint = toolbar.frame.origin;
+    CGPoint newPoint = CGPointMake(startingPoint.x + offset.x, startingPoint.y + offset.y);
+    
+    CGRect potentialNewFrame = CGRectMake(newPoint.x, newPoint.y, CGRectGetWidth(toolbar.frame), CGRectGetHeight(toolbar.frame));
+    
+    if (CGRectContainsRect(self.view.bounds, potentialNewFrame)) {
+        toolbar.frame = potentialNewFrame;
+    }
+}
+
+-(void)floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPinchWithOffset:(CGPoint)offset {
+    CGPoint startingPoint = toolbar.frame.origin;
+    CGRect newFrame = CGRectMake(startingPoint.x, startingPoint.y, CGRectGetWidth(toolbar.frame) - offset.x, CGRectGetHeight(toolbar.frame) - offset.y);
+    
+    if (CGRectContainsRect(self.view.bounds, newFrame)) {
+        toolbar.frame = newFrame;
+    }
+}
+
+
 @end

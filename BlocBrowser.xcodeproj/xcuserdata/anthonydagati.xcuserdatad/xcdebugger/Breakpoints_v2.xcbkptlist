@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BlocBrowser/BLCAppDelegate.m"
-            timestampString = "432616317.097228"
+            filePath = "BLCAwesomeFloatingToolbar.m"
+            timestampString = "433091798.720578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "-pinchFired:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,172 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432917742.544869"
+            filePath = "BLCAwesomeFloatingToolbar.m"
+            timestampString = "433091798.720578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-floatingToolbar:didSelectButtonWithTitle:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-<<<<<<< HEAD
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-=======
-            startingLineNumber = "117"
-            endingLineNumber = "117"
->>>>>>> awesome-colorful-toolbar
-            landmarkName = "-viewWillLayoutSubviews"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "@implementation BLCWebBrowser"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "-textFieldShouldReturn:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-<<<<<<< HEAD
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "-viewWillLayoutSubviews"
-=======
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "-textFieldShouldReturn:"
->>>>>>> awesome-colorful-toolbar
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-<<<<<<< HEAD
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "@implementation BLCWebBrowser"
-            landmarkType = "3">
-=======
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "-webView:didFailLoadWithError:"
-            landmarkType = "5">
->>>>>>> awesome-colorful-toolbar
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "-textFieldShouldReturn:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-<<<<<<< HEAD
-            startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "@implementation BLCWebBrowser"
-            landmarkType = "3">
-=======
             startingLineNumber = "156"
             endingLineNumber = "156"
-            landmarkName = "-webViewDidStartLoad:"
-            landmarkType = "5">
->>>>>>> awesome-colorful-toolbar
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432935072.579339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-<<<<<<< HEAD
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "-textFieldShouldReturn:"
-=======
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "-webViewDidStartLoad:"
->>>>>>> awesome-colorful-toolbar
+            landmarkName = "-pinchFired:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -200,13 +41,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432921491.776673"
+            filePath = "BLCAwesomeFloatingToolbar.m"
+            timestampString = "433091798.720578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "-resetWebView"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "-pinchFired:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -216,127 +57,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BLCAwesomeFloatingToolbar.h"
-            timestampString = "432921763.53641"
+            filePath = "BLCAwesomeFloatingToolbar.m"
+            timestampString = "433091716.956326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-initWithFourTitles:"
-            landmarkType = "4">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[BLCAwesomeFloatingToolbar delegate]"
-                  moduleName = "BlocBrowser"
-                  urlString = "file:///Users/anthonydagati/bloc/ios-exercises/BlocBrowser/BLCAwesomeFloatingToolbar.h"
-                  timestampString = "432929149.070622"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[BLCAwesomeFloatingToolbar setDelegate:]"
-                  moduleName = "BlocBrowser"
-                  urlString = "file:///Users/anthonydagati/bloc/ios-exercises/BlocBrowser/BLCAwesomeFloatingToolbar.h"
-                  timestampString = "432929149.072716"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "31">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432962056.977528"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "-loadView"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "-longPressedFired:"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432962596.166328"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-<<<<<<< HEAD
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-=======
-            startingLineNumber = "59"
-            endingLineNumber = "59"
->>>>>>> awesome-colorful-toolbar
-            landmarkName = "-loadView"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BLCWebBrowser.m"
-            timestampString = "432963104.363143"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "awesomeToolbar"
-            landmarkType = "19">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[BLCWebBrowser awesomeToolbar]"
-                  moduleName = "BlocBrowser"
-                  urlString = "file:///Users/anthonydagati/bloc/ios-exercises/BlocBrowser/BLCWebBrowser.m"
-                  timestampString = "432963122.302925"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[BLCWebBrowser setAwesomeToolbar:]"
-                  moduleName = "BlocBrowser"
-                  urlString = "file:///Users/anthonydagati/bloc/ios-exercises/BlocBrowser/BLCWebBrowser.m"
-                  timestampString = "432963122.304005"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "31">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
