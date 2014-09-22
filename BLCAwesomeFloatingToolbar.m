@@ -22,6 +22,22 @@
 
 @implementation BLCAwesomeFloatingToolbar
 
+//-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//}
+
+//-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//}
+
+//-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+//{
+//}
+
+//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+//}
+
+
 -(instancetype) initWithFourTitles:(NSArray *)titles {
     self = [super init];
     
@@ -160,13 +176,20 @@
     }
 }
 
--(void) longPressedFired:(UILongPressGestureRecognizer *)recognizer {
+-(void) longPressFired:(UILongPressGestureRecognizer *)recognizer {
     if (recognizer.state == UIGestureRecognizerStateRecognized) {
-        self.backgroundColor = [UIColor colorWithWhite:220/255.0f alpha:1];
+        NSLog(@"Initial label colors are %@", self.colors);
+        self.colors = @[[UIColor colorWithRed:205/255.0 green:250/255.0 blue:71/255.0 alpha:1],
+                        [UIColor colorWithRed:172/255.0 green:165/255.0 blue:164/255.0 alpha:1],
+                        [UIColor colorWithRed:149/255.0 green:158/255.0 blue:203/255.0 alpha:1],
+                        [UIColor colorWithRed:205/255.0 green:105/255.0 blue:97/255.0 alpha:1]];
+                        //self.backgroundColor = [UIColor colorWithWhite:195/255.0f alpha:0.5];
         
-        NSLog(@"New background color");
+        NSLog(@"New label colors are: %@", self.colors);
+        NSLog(@"Testing that longpressed Gesture was pressed");
         
     }
+    
 }
 
 - (id)initWithFrame:(CGRect)frame

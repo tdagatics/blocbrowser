@@ -11,6 +11,8 @@
 @class BLCAwesomeFloatingToolbar;
 
 @protocol BLCAwesomeFloatingToolbarDelegate <NSObject>
+//There are optional and required within a protocol; may only want to take certain callbacks
+//Look back at browser protocol / delegate code
 
 @optional
 
@@ -26,10 +28,11 @@
 
 -(void) setEnabled:(BOOL)enabled forButtonWithTtile:(NSString *)title;
 
-@property (nonatomic, weak) id <BLCAwesomeFloatingToolbarDelegate> delegate;
+// Should not be in header file; make declaration that participating in protocol to deal with these declarations
+//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+//-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+//-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
+//-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
--(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+@property (nonatomic, weak) id <BLCAwesomeFloatingToolbarDelegate> delegate;
 @end

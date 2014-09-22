@@ -209,7 +209,9 @@
 
 -(void)floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPinchWithOffset:(CGPoint)offset {
     CGPoint startingPoint = toolbar.frame.origin;
+    NSLog(@"Initial frame is %f %f %f %f", startingPoint.x, startingPoint.y, CGRectGetWidth(toolbar.frame), CGRectGetHeight(toolbar.frame));
     CGRect newFrame = CGRectMake(startingPoint.x, startingPoint.y, CGRectGetWidth(toolbar.frame) - offset.x, CGRectGetHeight(toolbar.frame) - offset.y);
+    NSLog(@"New frame after re-size is %f %f %f %f", startingPoint.x, startingPoint.y, CGRectGetWidth(toolbar.frame) - offset.x, CGRectGetHeight(toolbar.frame) - offset.y);
     
     if (CGRectContainsRect(self.view.bounds, newFrame)) {
         toolbar.frame = newFrame;
