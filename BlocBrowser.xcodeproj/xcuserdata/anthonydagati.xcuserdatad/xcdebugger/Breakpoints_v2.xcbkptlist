@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "-pinchFired:"
-            landmarkType = "5">
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "-pinchFired:"
-            landmarkType = "5">
+            startingLineNumber = "306"
+            endingLineNumber = "306"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "-pinchFired:"
-            landmarkType = "5">
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,13 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "-longPressFired:"
-            landmarkType = "5">
+            startingLineNumber = "317"
+            endingLineNumber = "317"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,13 +122,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "-pinchFired:"
-            landmarkType = "5">
+            startingLineNumber = "299"
+            endingLineNumber = "299"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,13 +138,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "-pinchFired:"
-            landmarkType = "5">
+            startingLineNumber = "300"
+            endingLineNumber = "300"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "-initWithFourTitles:"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,13 +170,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "-longPressFired:"
-            landmarkType = "5">
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -186,13 +186,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
-            landmarkName = "-longPressFired:"
-            landmarkType = "5">
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -202,13 +202,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BLCAwesomeFloatingToolbar.m"
-            timestampString = "433108954.589572"
+            timestampString = "433111572.836073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "-pinchFired:"
-            landmarkType = "5">
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "@implementation BLCAwesomeFloatingToolbar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -240,6 +240,54 @@
             startingLineNumber = "200"
             endingLineNumber = "200"
             landmarkName = "-floatingToolbar:didTryToPanWithOffset:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BLCAwesomeFloatingToolbar.m"
+            timestampString = "433111572.836073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-initWithFourTitles:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BLCAwesomeFloatingToolbar.m"
+            timestampString = "433111572.836073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "-layoutSubviews"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BLCAwesomeFloatingToolbar.m"
+            timestampString = "433111572.836073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
+            landmarkName = "-initWithFrame:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

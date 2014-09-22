@@ -26,7 +26,7 @@
 
 -(instancetype) initWithFourTitles:(NSArray *)titles;
 
--(void) setEnabled:(BOOL)enabled forButtonWithTtile:(NSString *)title;
+-(void) setEnabled:(BOOL)enabled forButtonWithTitle:(NSString *)title;
 
 // Should not be in header file; make declaration that participating in protocol to deal with these declarations
 //-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;

@@ -190,10 +190,10 @@
     }
     }
     
-    [self.awesomeToolbar setEnabled:[self.webview canGoBack] forButtonWithTtile:kBLCWebBrowserBackString];
-    [self.awesomeToolbar setEnabled:[self.webview canGoForward] forButtonWithTtile:kBLCWebBrowserForwardString];
-    [self.awesomeToolbar setEnabled:self.frameCount > 0 forButtonWithTtile:kBLCWebBrowserStopString];
-    [self.awesomeToolbar setEnabled:self.webview.request.URL && self.frameCount == 0 forButtonWithTtile:kBLCWebBrowserRefreshString];
+    [self.awesomeToolbar setEnabled:[self.webview canGoBack] forButtonWithTitle:kBLCWebBrowserBackString];
+    [self.awesomeToolbar setEnabled:[self.webview canGoForward] forButtonWithTitle:kBLCWebBrowserForwardString];
+    [self.awesomeToolbar setEnabled:self.frameCount > 0 forButtonWithTitle:kBLCWebBrowserStopString];
+    [self.awesomeToolbar setEnabled:self.webview.request.URL && self.frameCount == 0 forButtonWithTitle:kBLCWebBrowserRefreshString];
 }
 
 -(void)floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset {
