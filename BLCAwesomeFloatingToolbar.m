@@ -181,17 +181,23 @@
         [self setNeedsDisplay];
         NSLog(@"Initial label colors are %@", self.colors);
         self.colors = @[[UIColor colorWithRed:205/255.0 green:250/255.0 blue:71/255.0 alpha:1],
-                        [UIColor colorWithRed:172/255.0 green:165/255.0 blue:164/255.0 alpha:1],
+                        [UIColor colorWithRed:192/255.0 green:165/255.0 blue:164/255.0 alpha:1],
                         [UIColor colorWithRed:149/255.0 green:158/255.0 blue:203/255.0 alpha:1],
                         [UIColor colorWithRed:205/255.0 green:105/255.0 blue:97/255.0 alpha:1]];
                         //self.backgroundColor = [UIColor colorWithWhite:195/255.0f alpha:0.5];
+
+        for (UILabel *label in self.labels) {
+            NSUInteger currentLabelIndex = [self.labels indexOfObject:label]; //0 through 3
+
+            label.backgroundColor = [self.colors objectAtIndex:currentLabelIndex];
+            }
+        }
 
         NSLog(@"New label colors are: %@", self.colors);
         NSLog(@"Testing that longpressed Gesture was pressed");
         
     }
-    
-}
+
 
 - (id)initWithFrame:(CGRect)frame
 {
