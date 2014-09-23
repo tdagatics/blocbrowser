@@ -24,6 +24,7 @@
 
 @implementation BLCAwesomeFloatingToolbar
 
+
 -(instancetype) initWithFourTitles:(NSArray *)titles {
     self = [super init];
     
@@ -60,11 +61,13 @@
             button.backgroundColor = colorForThisButton;
             //button.textColor = [UIColor whiteColor];
             [buttonsArray addObject:button];
-//            [button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
-            [button addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+            
+            [button addTarget:self.delegate action:@selector(goBack) forControlEvents:
+             UIControlEventTouchUpInside];
             [button addTarget:self action:@selector(goForward) forControlEvents:UIControlEventTouchUpInside];
-            [button addTarget:self action:@selector(stopLoading) forControlEvents:UIControlEventTouchUpInside];
-            [button addTarget:self action:@selector(reload) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self.delegate action:@selector(stopLoading) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self.delegate action:@selector(reload) forControlEvents:UIControlEventTouchUpInside];
+           //[button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
             
         }
         
@@ -343,7 +346,7 @@
 
 */
 
-- (id)initWithFrame:(CGRect)frame
+/*- (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
