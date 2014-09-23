@@ -60,7 +60,15 @@
             button.backgroundColor = colorForThisButton;
             //button.textColor = [UIColor whiteColor];
             [buttonsArray addObject:button];
+//            [button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self action:@selector(goForward) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self action:@selector(stopLoading) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self action:@selector(reload) forControlEvents:UIControlEventTouchUpInside];
+            
         }
+        
+  
 
         self.buttons = buttonsArray;
         
