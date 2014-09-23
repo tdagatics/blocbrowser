@@ -53,14 +53,15 @@
             
             //button.textAlignment = NSTextAlignmentCenter;
             button.titleLabel.font = [UIFont systemFontOfSize:10];
-            button.titleLabel.textColor = [UIColor whiteColor];
-            button.titleLabel.text = titleForThisButton;
+            button.titleLabel.textColor = [UIColor blackColor];
+            [button setTitle:titleForThisButton forState:UIControlStateNormal];
+            //button.titleLabel.text = titleForThisButton;
             button.titleLabel.textAlignment = NSTextAlignmentCenter;
             button.backgroundColor = colorForThisButton;
             //button.textColor = [UIColor whiteColor];
             [buttonsArray addObject:button];
         }
-        
+
         self.buttons = buttonsArray;
         
         for (UIButton *thisButton in self.buttons) {
