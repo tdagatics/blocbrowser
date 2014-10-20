@@ -28,13 +28,13 @@
 @implementation BLCWebBrowser
 
 -(void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didSelectButtonWithTitle:(NSString *)title {
-    if ([title isEqual:NSLocalizedString(@"Back", @"Back Command")]) {
+    if ([title isEqual:kBLCWebBrowserBackString]) {
         [self.webview goBack];
-    } else if ([title isEqual:NSLocalizedString(@"Forward", @"Forward Command")]) {
+    } else if ([title isEqual:kBLCWebBrowserForwardString]) {
         [self.webview goForward];
-    } else if ([title isEqual:NSLocalizedString(@"Stop", @"Stop Command")]) {
+    } else if ([title isEqual:kBLCWebBrowserStopString]) {
         [self.webview stopLoading];
-    } else if ([title isEqual:NSLocalizedString(@"Refresh", @"Reload Command")]) {
+    } else if ([title isEqual:kBLCWebBrowserRefreshString]) {
         [self.webview reload];
     }
 }

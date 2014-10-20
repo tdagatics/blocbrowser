@@ -10,29 +10,41 @@
 	<string>BlocBrowser</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>21297530-1CFE-4317-A71A-512AEC566CD2</key>
+		<key>3F3D8B9BFCBD15108C60515B9BC455E6B0ED1EAD</key>
 		<string>https://github.com/tdagatics/blocbrowser.git</string>
+		<key>5450119CCA2DD394E9078F73A3071326A1F877FC</key>
+		<string>https://github.com/tdagatics/ios-exercises.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BlocBrowser.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>21297530-1CFE-4317-A71A-512AEC566CD2</key>
+		<key>3F3D8B9BFCBD15108C60515B9BC455E6B0ED1EAD</key>
 		<string>../..</string>
+		<key>5450119CCA2DD394E9078F73A3071326A1F877FC</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/tdagatics/blocbrowser.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>21297530-1CFE-4317-A71A-512AEC566CD2</string>
+	<string>3F3D8B9BFCBD15108C60515B9BC455E6B0ED1EAD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>21297530-1CFE-4317-A71A-512AEC566CD2</string>
+			<string>5450119CCA2DD394E9078F73A3071326A1F877FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3F3D8B9BFCBD15108C60515B9BC455E6B0ED1EAD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BlocBrowser</string>
 		</dict>
